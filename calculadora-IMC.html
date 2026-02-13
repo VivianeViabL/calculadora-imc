@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <script src="calculadoraIMC.js"></script>
+    <link rel="stylesheet" href="styleCalculadora.css">
+    </head>
+<body>
+    <header> <!-- Cabeçalho -->
+        <p></p>
+        <img src="balanca-.jpg" alt="Imagem de balança">
+        <p><h1>Calcule seu IMC agora!</h1></p>
+    </header>
+    
+    <section class="card">
+        <p><label for="altura">Digite sua altura:</label></p>
+        <p><input type="number" id="altura" step="0.01" maxlength="4"></p>
+        
+        <label for="peso">Digite seu peso: </label>
+        <p><input type="number" id="peso" maxlength="6"></p>
+
+        <button onclick="calculoIMC()">Calcular</button>
+    </section>
+
+    <h3>Resultado: <p id="resultado"></p></h3>
+
+    <h3>Resultado classificação IMC: <p id="classificacao"></p></h3>
+
+    <h2>Parâmetros IMC</h2>
+        <ul> 
+            <li>Valor IMC Menor que 18,5  ->  Magreza  (0)</li>
+            <p><li>Valor IMC Entre 18,5 e 24,9  ->  Normal  (0)</li></p>
+            <p><li>Valor IMC Entre 25,0 e 29,9  ->  Sobrepeso  (I)</li></p>
+            <p><li>Valor IMC Entre 30,0 e 39,9  ->  Obesidade  (II)</li></p>
+            <p><li>Valor IMC Maior que 40,0  ->  Obesidade Grave  (III)</li></p>
+        </ul>
+    <p></p>
+    <footer> <!-- Rodapé -->
+        <p>&copy; 2026</p>
+    </footer>
+</body>
+</html>
